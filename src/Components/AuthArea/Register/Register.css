@@ -1,0 +1,113 @@
+.Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 20px;
+}
+
+.Register form {
+    text-align: center;
+    min-width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 51, 204, 0.1);
+    
+}
+
+.Register h2 {
+    color: #0033cc;
+    font-size: 26px;
+    font-weight: bold;   
+     margin-bottom:20px;
+
+
+}
+
+.Register .form-control {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Register label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #0033cc;
+}
+
+.Register input {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.Register input:focus {
+    border-color: #F1A321;
+    outline: none;
+}
+
+.Register button {
+    width: 100%;
+    padding: 10px;
+    background-color: #E6952C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Register button:hover {
+    background-color: #D1891C;
+}
+
+.Register div {
+    text-align: center;
+    margin-top: 10px;
+    color: #0033cc;
+}
+.Register .error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+.Register .password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Register .password-wrapper input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.Register .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.Register .toggle-password i {
+    font-size: 1.5em;
+    color: #0033cc;
+    transition: color 0.3s;
+}
+
+.Register .toggle-password i:hover {
+  color: #0056b3;
+}
+.Register .toggle-password.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

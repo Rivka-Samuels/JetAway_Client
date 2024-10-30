@@ -1,0 +1,118 @@
+/* AddVacation.css */
+
+.AddVacation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.AddVacation .box {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Fixed width for the form */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.AddVacation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:  #0033cc;
+}
+
+.AddVacation .form-control {
+    margin-bottom: 15px;
+}
+
+.AddVacation label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.AddVacation input[type="text"],
+.AddVacation input[type="number"],
+.AddVacation input[type="date"],
+.AddVacation textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.AddVacation input[type="text"]:focus,
+.AddVacation input[type="number"]:focus,
+.AddVacation input[type="date"]:focus,
+.AddVacation textarea:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.AddVacation textarea.fixed-textarea {
+    resize: none;
+    height: 100px;
+}
+
+.AddVacation .err {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.AddVacation .upload-image {
+    width: 100%;
+    height: auto;
+    border: 1px dashed #007bff; 
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.AddVacation .file-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #6c757d; 
+}
+
+.AddVacation .btnSubmit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0033cc; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; 
+}
+
+.AddVacation .btnSubmit:disabled {
+    background-color: #6c757d; 
+}
+
+.AddVacation .btnSubmit:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.AddVacation .btnCancel {
+    width: 100%;
+    padding: 10px;
+    background-color: red; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.AddVacation .btnCancel:hover {
+    background-color: #c82333;
+}

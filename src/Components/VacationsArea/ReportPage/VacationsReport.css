@@ -1,0 +1,109 @@
+.vacations-report {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.vacations-report h2 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.vacations-report canvas {
+    width: 100% !important;
+    height: auto; /* Set height to auto for responsive scaling */
+}
+
+.report-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    overflow-x: auto; /* Horizontal scrolling */
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Scrollbar color for Firefox */
+}
+
+.report-container::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+}
+
+.report-container::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth color transition */
+}
+
+.report-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover color */
+}
+
+.report-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center; /* Center buttons */
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media (min-width: 600px) {
+    .button-container {
+        flex-direction: row; /* Align buttons horizontally on larger screens */
+        justify-content: space-between; /* Space out buttons */
+    }
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%; /* Full width buttons for small screens */
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+@media (min-width: 600px) {
+    .btn-primary,
+    .btn-secondary {
+        width: auto; /* Auto width for larger screens */
+        margin: 0; /* Remove margin */
+    }
+}
+
+.btnDownload {
+    background-color: #F1A321;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btnDownload:hover {
+    background-color: #F9C57A; 
+    transition: background-color 0.3s ease;
+}
+
+.btnGoBack {
+    background-color: transparent;
+    color: #0033cc;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.btnGoBack:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}

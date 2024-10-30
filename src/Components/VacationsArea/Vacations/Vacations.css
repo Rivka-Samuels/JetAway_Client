@@ -1,0 +1,190 @@
+.Vacations {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Vacations a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+}
+
+.Vacations a:hover,
+.Vacations a:active {
+    color: #0056b3;
+}
+
+.Vacations p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.vacation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.paginations {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    border: 0 solid;
+    color: #007bff;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    transition: font-weight 0.3s;
+}
+
+.page-link:hover {
+    color: #0056b3;
+}
+
+.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.filters label {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    font-weight: bolder;
+}
+
+.filters input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.filters label:hover {
+    color: #0056b3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 80px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #0033cc;
+}
+
+.pagination span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.page-number {
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-number:hover {
+    background-color: #f0f0f0;
+}
+
+.dots {
+    margin: 0 5px;
+    font-size: 16px;
+    color: #999;
+}
+
+.add-vacation-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.add-vacation-button {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.add-vacation-button i {
+    margin-right: 5px;
+}
+
+.add-vacation-button:hover {
+    color: #0056b3;
+}
+
+.pagination .ellipsis {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #0033cc;
+    cursor: default;
+}
+
+.pagination span.dots {
+    margin: 0 5px;
+    font-size: 16px;
+    color: #0033cc;
+    font-weight: bold;
+    cursor: default;
+    transition: color 0.3s;
+}
+
+.pagination span.dots:hover {
+    color: #0056b3;
+}
